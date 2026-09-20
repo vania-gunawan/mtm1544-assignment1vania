@@ -2,6 +2,42 @@
    This file is already linked from index.html. Write your rules below.
    Start by changing the body background colour and saving, to confirm the link works. */
 
+/*This is to check if it's properly connected to HTML*/
+body { 
+   background-color: white;
+}
+/*Change Header 1 color*/
 h1 {
    color:green;
+}
+/*Change Header 2 color*/
+h2 {
+   Color:#001DB8;
+}
+/*Change text alignment by grouping header 1 and 2 together*/
+h1,h2 {
+   text-align: center;
+}
+/*Change paragraph colour and line height*/
+p {
+   Color:#2A92CF; line-height: 2
+}
+/*Change intro text using class selector*/
+.intro{
+  font-family:Helvetica;
+  font-size: 22px;
+  font-weight: 300;
+  color: #006969;
+
+}
+
+/*Using ID selector to change summit specifically*/
+#summit {
+   color: #63212a;
+   border-left: 4px solid crimson;
+   padding-left: 0.6rem;
+}
+
+p{
+   Color:#B80092; line-height: 1.5
 }
