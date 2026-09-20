@@ -39,7 +39,7 @@ p {
 /*Using an ID selector to change "Summit" specifically*/
 #summit {
    color: #63212a;
-   border-left: 2px solid pink;
+   border-left: 2px solid paleturquoise;
 }
 
 /*Later rule that overrides the previous paragraph rule*/
