@@ -34,8 +34,7 @@ p {
 /*Using ID selector to change summit specifically*/
 #summit {
    color: #63212a;
-   border-left: 4px solid crimson;
-   padding-left: 0.6rem;
+   border-left: 2px solid pink;
 }
 
 p{
