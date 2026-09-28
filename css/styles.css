@@ -3,6 +3,11 @@
    Start by changing the body background colour and saving, to confirm the link works. */
 
 /*This is to check if it's properly connected to HTML*/
+
+* {
+  box-sizing: border-box;
+}
+
 body { 
    background-color: white;
 }
@@ -13,6 +18,7 @@ h1 {
 }
 
 /*Change heading 2 color*/
+
 h2 {
    color:#001DB8; line-height: 1;
 }
@@ -29,11 +35,31 @@ p {
 
 /*Change intro text using class selector*/
 .intro{
-  font-family:Helvetica;
-  font-size: 22px;
-  font-weight: 300;
-  color: #006969;
+   background-color: #FFE8FD;
+   border: 2px solid #112937;
+   border-radius: 10px;
+   padding: 30px;
+   width: 80%;
+   margin-bottom: 60px;
+   margin-left:auto;
+   margin-right:auto;
+   font-family:Helvetica;
+   font-size: 22px;
+   font-weight: 300;
+   color: #006969;
 
+}
+
+img{
+   aspect-ratio: 16 / 9;
+   width: 100%;
+}
+
+.a{
+   margin-bottom: 40px;
+}
+.b{
+   margin-top: 20px;
 }
 
 /*Using an ID selector to change "Summit" specifically*/
