@@ -4,10 +4,12 @@
 
 /*This is to check if it's properly connected to HTML*/
 /*This added to ensure the set width has included padding & border*/
+/*Week 2*/
 * {
   box-sizing: border-box;
 }
 
+/*Week 3*/
 body { 
    font-family: "Alata", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
    font-size: 1rem;
@@ -45,6 +47,7 @@ p {
 }
 
 /*Change intro text using class selector*/
+/*Week 2*/
 .intro{
    background-color: #FFE8FD;
    /*border for the pink square*/
@@ -90,6 +93,7 @@ p{
    color:#47002C; line-height: 1.5;
 }
 
+/*Week 3*/
 .pallette{
    text-align:center;
 }
@@ -116,3 +120,5 @@ a:hover {
   background-color:yellow;
   text-decoration: underline;
 }
+
+/*Week 4*/
