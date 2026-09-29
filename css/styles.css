@@ -3,7 +3,7 @@
    Start by changing the body background colour and saving, to confirm the link works. */
 
 /*This is to check if it's properly connected to HTML*/
-
+/*This added to ensure the set width has included padding & border*/
 * {
   box-sizing: border-box;
 }
@@ -36,28 +36,32 @@ p {
 /*Change intro text using class selector*/
 .intro{
    background-color: #FFE8FD;
+   /*border for the pink square*/
    border: 2px solid #112937;
+   /*border radius added to round the corners*/
    border-radius: 10px;
    padding: 30px;
+   /*the box takes 80% of the container's width*/
    width: 80%;
    margin-bottom: 60px;
+   /*auto margin left & right works at set width because it left extra space for auto margin to divide the space evenly*/
    margin-left:auto;
    margin-right:auto;
    font-family:Helvetica;
    font-size: 22px;
    font-weight: 300;
    color: #006969;
-
 }
+
 
 img{
    aspect-ratio: 16 / 9;
    width: 100%;
 }
-
-.a{
+/*to show margin collapse, the largest of two wins and ignore the smaller 20px, so the gap is 40px*/
    margin-bottom: 40px;
 }
+
 .b{
    margin-top: 20px;
 }
@@ -68,7 +72,7 @@ img{
    border-left: 2px solid paleturquoise;
 }
 
-/*Later rule that overrides the previous paragraph rule*/
+/*Later rule that overrides the previous paragraph rule, because both rules match, so the later ones applies */
 p{
    color:#B80092; line-height: 1.5;
 }
