@@ -18,7 +18,7 @@ body {
    background-color: white;
 }
 
-/*Change heading 1 color*/
+/*Change heading 1 color from #008000 to #004718, to meet the contrast requirement*/
 h1 {
    color: #004718;
    font-size:2.5rem;
@@ -64,6 +64,7 @@ p {
    font-family:Helvetica;
    font-size: 22px;
    font-weight: 300;
+   /*Change the color from #006969 to #61003c as it has a better contrast*/
    color: #61003C;
 }
 
@@ -84,12 +85,14 @@ img{
 
 /*Using an ID selector to change "Summit" specifically*/
 #summit {
+   /*changed the color from #63212a to #004718 to match the H1*/
    color: #004718;
    border-left: 5px solid #47002C;
 }
 
-/*Later rule that overrides the previous paragraph rule, because both rules match, so the later ones applies */
+/*Later rule that overrides the previous paragraph rule, because both rules match, so the later ones applies, I changed the paragraph color to this darker one to */
 p{
+   /*changed #B80092 to #47002C to have a better contrast*/
    color:#47002C; line-height: 1.5;
 }
 
@@ -98,25 +101,27 @@ p{
    text-align:center;
 }
 
-/*this part is for color pallette, HSL*/
+/*this part is for color pallette. The change in lightness looks more drastic in HSL compared to OKLCH. */
 .l90 { color:black; background-color: hsl(308 100% 90%); }
 .l70 { color:black; background-color: hsl(308 100% 70%); }
 .l50 { color:white; background-color: hsl(308 100% 50%); }
 .l30 { color:white; background-color: hsl(308 100% 30%); }
 
-/*this one is the oklch color pallette*/ 
+/*this one is the oklch color pallette, the lightness results look more evenly spaced*/ 
 .ok90 { color:black; background-color: oklch(0.9 0.12 100);}
 .ok70 { color:black; background-color: oklch(0.7 0.12 100);}
 .ok50 { color:white; background-color: oklch(0.5 0.12 100);}
 .ok30 { color:white; background-color: oklch(0.3 0.12 100);}
 
+/*This is for a clickable link*/
 a{
-   color: #001DB8;
+  color: #001DB8;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #47002C;
+   /*these color fits the contrast requirements from contrast checker*/
+  color:color-mix(in oklch, #001DB8 70%, #47002C);
   background-color:yellow;
   text-decoration: underline;
 }
