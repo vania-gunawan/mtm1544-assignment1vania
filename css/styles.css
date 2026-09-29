@@ -9,18 +9,29 @@
 }
 
 body { 
+   font-family: "Alata", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   font-size: 1rem;
+   line-height: 1.5;
+   font-weight:300;
    background-color: white;
 }
 
 /*Change heading 1 color*/
 h1 {
-   color:green;
+   color: #004718;
+   font-size:2.5rem;
+   line-height:0.75;
+   text-wrap: balance;
+   font-weight:700;
 }
 
 /*Change heading 2 color*/
 
 h2 {
    color:#001DB8; line-height: 1;
+   font-size:1.5rem;
+   line-height:0.5;
+   text-wrap:balance;
 }
 
 /*Center both headings using a grouped selector*/
@@ -50,15 +61,17 @@ p {
    font-family:Helvetica;
    font-size: 22px;
    font-weight: 300;
-   color: #006969;
+   color: #61003C;
 }
 
-
+/*image added with the ratio of 16/9*/
 img{
    aspect-ratio: 16 / 9;
    width: 100%;
 }
+
 /*to show margin collapse, the largest of two wins and ignore the smaller 20px, so the gap is 40px*/
+.a{
    margin-bottom: 40px;
 }
 
@@ -68,11 +81,38 @@ img{
 
 /*Using an ID selector to change "Summit" specifically*/
 #summit {
-   color: #63212a;
-   border-left: 2px solid paleturquoise;
+   color: #004718;
+   border-left: 5px solid #47002C;
 }
 
 /*Later rule that overrides the previous paragraph rule, because both rules match, so the later ones applies */
 p{
-   color:#B80092; line-height: 1.5;
+   color:#47002C; line-height: 1.5;
+}
+
+.pallette{
+   text-align:center;
+}
+
+/*this part is for color pallette, HSL*/
+.l90 { color:black; background-color: hsl(308 100% 90%); }
+.l70 { color:black; background-color: hsl(308 100% 70%); }
+.l50 { color:white; background-color: hsl(308 100% 50%); }
+.l30 { color:white; background-color: hsl(308 100% 30%); }
+
+/*this one is the oklch color pallette*/ 
+.ok90 { color:black; background-color: oklch(0.9 0.12 100);}
+.ok70 { color:black; background-color: oklch(0.7 0.12 100);}
+.ok50 { color:white; background-color: oklch(0.5 0.12 100);}
+.ok30 { color:white; background-color: oklch(0.3 0.12 100);}
+
+a{
+   color: #001DB8;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #47002C;
+  background-color:yellow;
+  text-decoration: underline;
 }
