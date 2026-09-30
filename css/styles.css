@@ -73,13 +73,13 @@ p {
    color: #61003C;
 }
 
-/*image added with the ratio of 16/9*/
+/*Image was added with the ratio of 16/9*/
 img{
    aspect-ratio: 16 / 9;
    width: 100%;
 }
 
-/*to show margin collapse, the largest of two wins and ignore the smaller 20px, so the gap is 40px*/
+/*To show margin collapse, the largest of two wins and ignore the smaller 20px, so the gap is 40px*/
 .a{
    margin-bottom: 40px;
 }
@@ -178,10 +178,10 @@ button:focus {
 }
 /*this is safe to hide from assistive technology, because the emoji only act as a visual flourish*/
 .famoustrail::before {
-   content: "⛰️ "
+   content: "⛰️ ";
 }
 
-/*these rules targeting the same element, the winner will be #id, because it's the most specific. Confirmed in DevTools*/
+/*These rules targeting the same element, the winner will be #id, because it has the highest specificity. Confirmed in DevTools*/
 blockquote {
   color: #001DB8;
   text-align: center;
@@ -205,7 +205,7 @@ blockquote {
 }
 
 .trail3{
-   Color: #61003C
+   Color: #61003C;
 }
 
 
