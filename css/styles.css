@@ -28,7 +28,6 @@ h1 {
 }
 
 /*Change heading 2 color*/
-
 h2 {
    color:#001DB8; line-height: 1;
    font-size:1.5rem;
@@ -37,9 +36,15 @@ h2 {
 }
 
 /*Center both headings using a grouped selector*/
+/*for assignment 4, I replace this, then use :where()
 h1,h2 {
    text-align: center;
+}*/
+
+:where(h1,h2){
+   text-align:center;
 }
+
 
 /*Change paragraph colour and line height*/
 p {
@@ -125,5 +130,82 @@ a:hover {
   background-color:yellow;
   text-decoration: underline;
 }
+/*added focus for assignment 4, for accessibility reason*/
+a:focus {
+ outline: 2px dotted #61003C;
+ outline-offset: 2px;
+
+}
 
 /*Week 4*/
+button {
+   display:block;
+   margin:30px auto;
+   color: #001DB8;
+   background-color: #f2f2f2;
+   padding: 1em;
+   font-size: 1rem;
+   font-family:"Alata", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   border: 2px solid black;
+   border-radius: 8px;
+   text-decoration: none;
+   cursor:pointer;
+}
+/*button added for, with hover and focus elements, focus is useful for accessibility reason*/
+button:hover {
+   background-color: yellow;
+   color: #001DB8;
+}
+
+button:focus {
+   outline: 2px dotted #61003C;
+   outline-offset: 2px;
+
+}
+.trail {
+   width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*This to make the odd on the list coloured pink*/
+.trail li:nth-child(odd) {
+   background-color: #FFE8FD;
+}
+/*to make the first one on the list has thicker font and different background colour than the rest of the list*/
+.trail li:first-child {
+   font-weight: 800;
+   background-color: #FFF7A3;
+}
+/*this is safe to hide from assistive technology, because the emoji only act as a visual flourish*/
+.famoustrail::before {
+   content: "⛰️ "
+}
+
+/*these rules targeting the same element, the winner will be #id, because it's the most specific. Confirmed in DevTools*/
+blockquote {
+  color: #001DB8;
+  text-align: center;
+}
+
+.john {
+  color: #61003C;
+}
+
+#john {
+  color: #004718;
+}
+
+/*These are single-classes selectors that are equal , so the order decides the winner, which won by trail 3. This is easier to reason on because it has equal specificity*/
+.trail1 {
+   color:#001DB8;
+}
+
+.trail2 {
+   Color:#004718;
+}
+
+.trail3{
+   Color: #61003C
+}
+
+
